@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3  -rdynamic CMakeFiles/matrix_operations.dir/matrix_operations.cpp.o  -o matrix_operations 

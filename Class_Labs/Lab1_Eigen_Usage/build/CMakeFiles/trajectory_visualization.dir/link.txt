@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3  -rdynamic CMakeFiles/trajectory_visualization.dir/trajectory_visualization.cpp.o  -o trajectory_visualization 
