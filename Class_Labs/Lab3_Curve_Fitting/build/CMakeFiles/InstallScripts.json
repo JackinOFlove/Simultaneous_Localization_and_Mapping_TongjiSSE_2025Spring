@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/root/Lab3_Curve_Fitting/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
