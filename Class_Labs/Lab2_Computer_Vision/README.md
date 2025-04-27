@@ -1,4 +1,4 @@
-# 图像处理实验
+# 实验二：图像处理实验
 
 本实验基于OpenCV实现了以下功能：
 1. 图像基础操作（读取、显示、像素遍历、复制、赋值）
@@ -131,5 +131,4 @@ make
 1. OpenCV官方文档：https://docs.opencv.org/
 2. 《Computer Vision: Algorithms and Applications》, Richard Szeliski
 3. 《Learning OpenCV》, Gary Bradski & Adrian Kaehler
-
 
