@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/root/Lab4_OpenCV_ORB/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

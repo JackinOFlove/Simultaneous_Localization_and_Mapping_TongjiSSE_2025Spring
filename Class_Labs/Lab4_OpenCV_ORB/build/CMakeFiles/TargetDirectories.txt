@@ -1,0 +1,8 @@
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/orb_cv.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/orb_self.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/edit_cache.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/rebuild_cache.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/list_install_components.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/install.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/install/local.dir
+/root/Lab4_OpenCV_ORB/build/CMakeFiles/install/strip.dir
