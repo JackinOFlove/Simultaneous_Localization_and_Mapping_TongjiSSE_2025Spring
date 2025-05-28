@@ -1,0 +1,15 @@
+colorHeight = 240
+colorToDepthExtrinsics = 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+colorWidth = 320
+depthHeight = 240
+depthWidth = 320
+fx_color = 570.3422047415297
+fx_depth = 570.3422047415297
+fy_color = 570.3422047415297
+fy_depth = 570.3422047415297
+mx_color = 320.0
+mx_depth = 320.0
+my_color = 240.0
+my_depth = 240.0
+numColorFrames = 10642
+numDepthFrames = 10642
