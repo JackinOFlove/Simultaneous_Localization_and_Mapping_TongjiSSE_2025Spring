@@ -155,7 +155,8 @@ Mat calculateDepthError(
     if (u >= 0 && u < depthMap.cols && v >= 0 && v < depthMap.rows)
     {
       // 从深度图获取真实深度（以米为单位）
-      double depth = static_cast<double>(depthMap.at<unsigned short>(v, u)) / 5000.0;
+      // 先右移3位（恢复原始深度值），然后除以1000转换为米
+      double depth = static_cast<double>(depthMap.at<unsigned short>(v, u) >> 3) / 1000.0;
       if (depth > 0)
       {
         double error = abs(Z - depth);
@@ -351,7 +352,7 @@ int main()
 
   // 可以设置间隔和最大处理对数
   int interval = 1;
-  int max_pairs = 100;
+  int max_pairs = 300;
 
   processImagesAndDepths(imagePaths, depthPaths, K, interval, max_pairs);
 

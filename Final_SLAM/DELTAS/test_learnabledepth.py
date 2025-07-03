@@ -240,8 +240,8 @@ def validate_with_gt(args, val_loader, supernet, trinet, depthnet, val_set=None)
             output = output.squeeze(1)
             errors_depth.update(compute_errors(tgt_depth_tiled, output, mask, False))
             if i % int(0.5*args.print_freq) == 0:
-                print(' TEST: Depth Error {:.4f} ({:.4f})'.format(errors_depth.avg[1] / 20, errors_depth.avg[0]/20))
-                print('rmse: {:.4f}, rmse_log: {:.4f}'.format(errors_depth.avg[6]/15, errors_depth.avg[7]/10))
+                print(' TEST: Depth Error {:.4f} ({:.4f})'.format(errors_depth.avg[1], errors_depth.avg[0]))
+                print('rmse: {:.4f}, rmse_log: {:.4f}'.format(errors_depth.avg[6], errors_depth.avg[7]))
         
     return errors_depth.avg, error_names
 

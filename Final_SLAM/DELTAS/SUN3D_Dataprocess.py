@@ -13,9 +13,9 @@ def convert_sun3d_to_deltas():
     scans_test_dir = os.path.join(dst_base, "scans_test")
     os.makedirs(scans_test_dir, exist_ok=True)
     
-    # 读取数据集文件
-    rgb_paths = sorted(glob(os.path.join(src_base, "image", "*")))[:10642]
-    depth_paths = sorted(glob(os.path.join(src_base, "depth", "*")))[:10642]
+    # 读取数据集文件 - 确保RGB和深度图对齐
+    rgb_paths = sorted(glob(os.path.join(src_base, "image", "*")))[0:10642]  # 1-10642张RGB图像
+    depth_paths = sorted(glob(os.path.join(src_base, "depth", "*")))[3:10645]  # 4-10645张深度图
     intrinsics_path = os.path.join(src_base, "intrinsics.txt")
     extrinsics_path = os.path.join(src_base, "extrinsics", "20130512130736.txt")
     
@@ -110,6 +110,10 @@ def convert_sun3d_to_deltas():
             
             depth = cv2.imread(depth_src, cv2.IMREAD_UNCHANGED)
             depth = cv2.resize(depth, (320, 240), interpolation=cv2.INTER_NEAREST)
+            
+            # 将深度值右移3位，恢复原始深度值
+            depth = depth >> 3
+            
             cv2.imwrite(depth_dst, depth)
             
             # 保存位姿

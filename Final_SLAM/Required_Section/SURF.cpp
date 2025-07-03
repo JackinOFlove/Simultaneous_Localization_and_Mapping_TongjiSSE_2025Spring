@@ -155,7 +155,7 @@ Mat calculateDepthError(
     if (u >= 0 && u < depthMap.cols && v >= 0 && v < depthMap.rows)
     {
       // 从深度图获取真实深度（以米为单位）
-      double depth = static_cast<double>(depthMap.at<unsigned short>(v, u)) / 5000.0;
+      double depth = static_cast<double>(depthMap.at<unsigned short>(v, u) >> 3) / 1000.0;
       if (depth > 0)
       {
         double error = abs(Z - depth);

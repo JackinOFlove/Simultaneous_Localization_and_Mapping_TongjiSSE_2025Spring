@@ -1,5 +1,0 @@
-/root/Final_SLAM/Required_Section/build/CMakeFiles/rebuild_cache.dir
-/root/Final_SLAM/Required_Section/build/CMakeFiles/edit_cache.dir
-/root/Final_SLAM/Required_Section/build/CMakeFiles/SURF.dir
-/root/Final_SLAM/Required_Section/build/CMakeFiles/SIFT.dir
-/root/Final_SLAM/Required_Section/build/CMakeFiles/ORB.dir
